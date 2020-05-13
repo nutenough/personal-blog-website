@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 1fr 5vh;
+    grid-template-areas: "header" "main" "footer";
+    margin: 0;
+}
+
+main {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+article {
+    border: 1px solid #000;
+    min-width: 80vw;
+}
+
+@media only screen and (max-width: 600px) {
+    article {
+        border: 1px solid #000;
+        min-width: 100vw;
+    }
+}
+
