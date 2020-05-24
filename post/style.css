@@ -1,3 +1,6 @@
+@import "../css/base.css";
+@import "../css/color.css";
+
 body {
     display: grid;
     height: 100vh;
@@ -8,21 +11,42 @@ body {
     margin: 0;
 }
 
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+header h1 {
+    padding-left: 1rem;
+    color: var(--primary-color);
+}
+
 main {
-    border: 1px solid #000;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
 }
 
 article {
-    border: 1px solid #000;
-    min-width: 80vw;
+    width: 60vw;
+}
+
+article h1 {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-left: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
     article {
-        border: 1px solid #000;
         min-width: 100vw;
     }
 }

@@ -1,3 +1,7 @@
+@import "css/base.css";
+@import "css/color.css";
+@import "css/card.css";
+
 body {
     display: grid;
     height: 100vh;
@@ -9,12 +13,18 @@ body {
 }
 
 header {
-    border: 1px solid #000;
     grid-area: header;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+header h1 {
+    padding-left: 1rem;
+    color: var(--primary-color);
 }
 
 main {
-    border: 1px solid #000;
     display: grid;
     grid-area: main;
     grid-template-columns: repeat(4, 1fr);
@@ -23,24 +33,37 @@ main {
 }
 
 nav {
-    border: 1px solid #000;
     grid-area: nav;
+    border-right: 1px dashed var(--text-color);
+    margin: 1rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 0;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px solid var(--accent-color);
 }
 
 .content {
-    border: 1px solid #000;
     grid-area: content;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.card {
-    border: 1px solid #000;
-}
-
 footer {
-    border: 1px solid #000;
     grid-area: footer;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-left: 1rem;
 }
