@@ -1,6 +1,6 @@
-@import "css/base.css";
-@import "css/color.css";
-@import "css/card.css";
+@import "assets/css/base.css";
+@import "assets/css/colors.css";
+@import "assets/css/card.css";
 
 body {
     display: grid;
@@ -29,7 +29,7 @@ main {
     grid-area: main;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "nav content content content ";
+    grid-template-areas: "nav card card card";
 }
 
 nav {
@@ -52,8 +52,8 @@ nav ul li a:hover {
     border-bottom: 5px solid var(--accent-color);
 }
 
-.content {
-    grid-area: content;
+.container {
+    grid-area: card;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
