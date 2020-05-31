@@ -16,7 +16,7 @@ header {
     grid-area: header;
     display: flex;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: #FFF;
 }
 
 header h1 {
@@ -64,6 +64,6 @@ footer {
     grid-area: footer;
     display: flex;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: #FFF;
     padding-left: 1rem;
 }
