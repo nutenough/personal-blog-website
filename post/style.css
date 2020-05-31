@@ -1,5 +1,5 @@
-@import "../css/base.css";
-@import "../css/color.css";
+@import "../assets/css/base.css";
+@import "../assets/css/colors.css";
 
 body {
     display: grid;
@@ -32,9 +32,43 @@ article {
     width: 60vw;
 }
 
+section {
+    text-align: justify;
+}
+
 article h1 {
     margin: 1rem 0;
     text-align: center;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.author-detail {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0;
+}
+
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    margin-right: 1em;
+    border-radius: 50%;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.social-media i {
+    padding-left: 0.2em;
 }
 
 footer {
