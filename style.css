@@ -1,5 +1,7 @@
 @import "assets/css/base.css";
 @import "assets/css/colors.css";
+@import "assets/css/header.css";
+@import "assets/css/footer.css";
 @import "assets/css/card.css";
 
 body {
@@ -10,18 +12,6 @@ body {
     grid-template-rows: 10vh 1fr 5vh;
     grid-template-areas: "header" "main" "footer";
     margin: 0;
-}
-
-header {
-    grid-area: header;
-    display: flex;
-    align-items: center;
-    background-color: #FFF;
-}
-
-header h1 {
-    padding-left: 1rem;
-    color: var(--primary-color);
 }
 
 main {
@@ -36,6 +26,10 @@ nav {
     grid-area: nav;
     border-right: 1px dashed var(--text-color);
     margin: 1rem;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 nav ul {
@@ -58,12 +52,4 @@ nav ul li a:hover {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
-
-footer {
-    grid-area: footer;
-    display: flex;
-    align-items: center;
-    background-color: #FFF;
-    padding-left: 1rem;
 }

@@ -1,26 +1,16 @@
-@import "../assets/css/base.css";
-@import "../assets/css/colors.css";
+@import "../../assets/css/base.css";
+@import "../../assets/css/colors.css";
+@import "../../assets/css/header.css";
+@import "../../assets/css/footer.css";
+@import "../../assets/css/avatar.css";
 
 body {
     display: grid;
-    height: 100vh;
     width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: 10vh 1fr 5vh;
     grid-template-areas: "header" "main" "footer";
     margin: 0;
-}
-
-header {
-    grid-area: header;
-    display: flex;
-    align-items: center;
-    background-color: #FFF;
-}
-
-header h1 {
-    padding-left: 1rem;
-    color: var(--primary-color);
 }
 
 main {
@@ -32,13 +22,21 @@ article {
     width: 60vw;
 }
 
-section {
-    text-align: justify;
+figure {
+    margin: 32px 0;
+    text-align: center;
 }
 
-article h1 {
-    margin: 1rem 0;
-    text-align: center;
+img {
+    width: 60vw;
+}
+
+#headline {
+    margin: 1em 0;
+}
+
+section {
+    text-align: justify;
 }
 
 .author {
@@ -53,18 +51,12 @@ article h1 {
     margin: 1em 0;
 }
 
-.author-avatar {
-    width: 48px;
-    height: 48px;
-    margin-right: 1em;
-    border-radius: 50%;
-}
-
 .author-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 12px;
+    color: var(--primary-color);
 }
 
 .social-media {
@@ -75,19 +67,13 @@ article h1 {
 
 .social-media i {
     padding-left: 0.2em;
-}
-
-footer {
-    grid-area: footer;
-    display: flex;
-    align-items: center;
-    background-color: #FFF;
-    padding-left: 1rem;
+    color: var(--primary-color);
 }
 
 @media only screen and (max-width: 600px) {
     article {
         min-width: 100vw;
+        margin: 0 1em;
     }
 }
 
