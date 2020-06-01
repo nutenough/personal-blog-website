@@ -48,8 +48,4 @@ nav ul li a:hover {
 
 .container {
     grid-area: card;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 }

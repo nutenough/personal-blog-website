@@ -22,6 +22,7 @@ main {
 
 article {
     width: 60vw;
+    margin-bottom: 1em;
 }
 
 #headline {
@@ -85,10 +86,8 @@ article {
     align-items: center;
 }
 
-.social-media i {
-    padding-right: 0.2em;
-    color: var(--primary-color);
-    margin-bottom: 1em;
+.padding-right {
+    padding-right: 8px;
 }
 
 @media only screen and (max-width: 600px) {

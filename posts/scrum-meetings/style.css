@@ -20,6 +20,7 @@ main {
 
 article {
     width: 60vw;
+    margin-bottom: 1em;
 }
 
 figure {
@@ -65,9 +66,8 @@ section {
     align-items: center;
 }
 
-.social-media i {
-    padding-left: 0.2em;
-    color: var(--primary-color);
+.padding-right {
+    padding-right: 8px;
 }
 
 @media only screen and (max-width: 600px) {
