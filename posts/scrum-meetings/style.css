@@ -8,7 +8,7 @@ body {
     display: grid;
     width: 100vw;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 1fr 5vh;
+    grid-template-rows: 10vh 1fr 7.5vh;
     grid-template-areas: "header" "main" "footer";
     margin: 0;
 }
@@ -72,7 +72,7 @@ section {
 
 @media only screen and (max-width: 600px) {
     article {
-        min-width: 100vw;
+        min-width: 95vw;
         margin: 0 1em;
     }
 }

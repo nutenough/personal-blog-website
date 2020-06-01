@@ -1,6 +1,7 @@
 @import "../assets/css/base.css";
 @import "../assets/css/colors.css";
 @import "../assets/css/header.css";
+@import "../assets/css/footer.css";
 @import "../assets/css/card.css";
 @import "../assets/css/button.css";
 @import "../assets/css/avatar.css";
@@ -9,7 +10,7 @@ body {
     display: grid;
     width: 100vw;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 1fr 5vh;
+    grid-template-rows: 10vh 1fr 7.5vh;
     grid-template-areas: "header" "main" "footer";
     margin: 0;
 }
@@ -87,19 +88,13 @@ article {
 .social-media i {
     padding-right: 0.2em;
     color: var(--primary-color);
-}
-
-footer {
-    grid-area: footer;
-    display: flex;
-    align-items: center;
-    background-color: #FFF;
-    padding-left: 1rem;
+    margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 600px) {
     article {
         min-width: 100vw;
+        margin: 0 1em;
     }
 }
 
